@@ -75,7 +75,7 @@ const UsersDataTable = () => {
       dataIndex: "id",
       render: (id) => (
         <div className="flex items-center justify-center gap-10">
-            <Button type ="primary" onClick={()=> navigate(`/users/${id}`)}>Detail</Button>
+            <Button primary onClick={()=> navigate(`/users/${id}`)}>Detail</Button>
             <Button warning onClick={()=> handleEdit(id)}>Edit</Button>
             <Button danger onClick={()=> handleDelete(id)}>Delete</Button>
             
