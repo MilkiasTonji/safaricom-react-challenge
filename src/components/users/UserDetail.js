@@ -40,7 +40,7 @@ const UserDetail = () => {
     <div className="flex flex-col items-center justify-center w-full container">
       {userDetail && (
         <div className="w-96 rounded-xl shadow-md content">
-          <h3>Personal Information</h3>
+          <h3 className="text-xl font-bold">Personal Information</h3>
           <div className="content-inner">
             <span>Name: {userDetail.name}</span>
             <span>Email: {userDetail.email}</span>
@@ -51,14 +51,14 @@ const UserDetail = () => {
 
           {userDetail.company && (
             <>
-              <h3>Company Information</h3>
+              <h3 className="text-xl font-bold">Company Information</h3>
               <div className="content-inner">
                 <span>Bs: {userDetail?.company.bs}</span>
                 <span>catchPhrase: {userDetail?.company?.catchPhrase}</span>
                 <span>companyName: {userDetail?.company?.name}</span>
               </div>
 
-              <h3>Address Information</h3>
+              <h3 className="text-xl font-bold">Address Information</h3>
               <div className="content-inner">
                 <span>City: {userDetail?.address?.city}</span>
                 <span>Street: {userDetail?.address?.street}</span>
