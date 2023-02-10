@@ -42,7 +42,7 @@ const UsersDataTable = () => {
   }
 
   const handleEdit = (id) => {
-    navigate(`/users/edit/:${id}`)
+    navigate(`/users/edit/${id}`)
   }
 
 

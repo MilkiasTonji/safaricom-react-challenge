@@ -17,7 +17,7 @@ export const deleteUser = async (id) => {
     return result.data
 }
 
-export const updateUser = async (id) => {
-    const result =  await axios.put(`${api_base_route}/users/${id}`)
+export const updateUser = async (id, values) => {
+    const result =  await axios.put(`${api_base_route}/users/${id}`, values)
     return result.data
 }
